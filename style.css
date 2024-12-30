@@ -44,3 +44,8 @@ li a:hover {
   object-fit: cover; /* Garante que as imagens ocupem o espaço sem distorcer */
   position: absolute; /* Posicionamento necessário para o slider */
 }
+
+.slider-container img {
+    object-fit: contain; /* Mantém a proporção e ajusta ao tamanho máximo possível */
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
+}
