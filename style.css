@@ -29,9 +29,10 @@ li a:hover {
 }
 
 .mySlides {
-  width: 100%; /* Define um tamanho uniforme */
-  max-height: 300px; /* limite a proporção da imagem */
-  max-width: 300px; /* Limita a largura máxima */
-  display: block; /* Remove qualquer espaço indesejado */
-  margin: 0 auto; /* Centraliza a imagem */
+  width: 300px; /* Largura fixa para todas as imagens */
+  height: 200px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Recorta a imagem para preencher a área */
+  display: block;
+  margin: 0 auto; /* Centraliza as imagens */
+  border: 1px solid #ccc; /* Opcional: adicione uma borda para consistência visual */
 }
