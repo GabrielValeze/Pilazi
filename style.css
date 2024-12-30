@@ -28,24 +28,24 @@ li a:hover {
   background-color: #111;
 }
 
-/* Contêiner para as imagens */
-.slider-container {
+/* Contêiner para a logo */
+.logo-container {
   width: 100%; /* Ocupa toda a largura da página */
   height: 300px; /* Altura fixa do retângulo */
-  overflow: hidden; /* Garante que as imagens não "escapem" do retângulo */
+  overflow: hidden; /* Garante que a logo não "escape" do retângulo */
   background-color: #f4f4f4; /* Cor de fundo para quando a imagem não cobre todo o espaço */
   position: relative; /* Posiciona o retângulo de forma fixa no layout */
 }
 
-/* Imagens dentro do slider */
-.slider-container img {
+/* Imagens dentro do espaço da logo */
+.logo-container img {
   width: 100%; /* Ajusta a largura para preencher o contêiner */
   height: 100%; /* Ajusta a altura para preencher o contêiner */
-  object-fit: cover; /* Garante que as imagens ocupem o espaço sem distorcer */
+  object-fit: cover; /* Garante que o logo ocupe o espaço sem distorcer */
   position: absolute; /* Posicionamento necessário para o slider */
 }
 
-.slider-container img {
+.logo-container img {
     object-fit: contain; /* Mantém a proporção e ajusta ao tamanho máximo possível */
     object-position: center; /* Centraliza a imagem dentro do contêiner */
 }
