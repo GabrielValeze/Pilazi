@@ -27,3 +27,11 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+.mySlides {
+  width: 100%; /* Define um tamanho uniforme */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 300px; /* Limita a largura máxima */
+  display: block; /* Remove qualquer espaço indesejado */
+  margin: 0 auto; /* Centraliza a imagem */
+}
