@@ -28,11 +28,19 @@ li a:hover {
   background-color: #111;
 }
 
-.mySlides {
-  width: 300px; /* Largura fixa para todas as imagens */
-  height: 200px; /* Altura fixa para todas as imagens */
-  object-fit: cover; /* Recorta a imagem para preencher a área */
-  display: block;
-  margin: 0 auto; /* Centraliza as imagens */
-  border: 1px solid #ccc; /* Opcional: adicione uma borda para consistência visual */
+/* Contêiner para as imagens */
+.slider-container {
+  width: 100%; /* Ocupa toda a largura da página */
+  height: 300px; /* Altura fixa do retângulo */
+  overflow: hidden; /* Garante que as imagens não "escapem" do retângulo */
+  background-color: #f4f4f4; /* Cor de fundo para quando a imagem não cobre todo o espaço */
+  position: relative; /* Posiciona o retângulo de forma fixa no layout */
+}
+
+/* Imagens dentro do slider */
+.slider-container img {
+  width: 100%; /* Ajusta a largura para preencher o contêiner */
+  height: 100%; /* Ajusta a altura para preencher o contêiner */
+  object-fit: cover; /* Garante que as imagens ocupem o espaço sem distorcer */
+  position: absolute; /* Posicionamento necessário para o slider */
 }
