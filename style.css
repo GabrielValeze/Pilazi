@@ -1,14 +1,21 @@
+/* Reset geral */
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
+/* Navegação */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  display: flex;
+  justify-content: center;
 }
 
 li {
@@ -21,31 +28,88 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: background 0.3s;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
 }
 
-/* Contêiner para a logo */
+/* Contêiner da logo */
 .logo-container {
-  width: 100%; /* Ocupa toda a largura da página */
-  height: 300px; /* Altura fixa do retângulo */
-  overflow: hidden; /* Garante que a logo não "escape" do retângulo */
-  background-color: #f4f4f4; /* Cor de fundo para quando a imagem não cobre todo o espaço */
-  position: relative; /* Posiciona o retângulo de forma fixa no layout */
-}
-
-/* Imagens dentro do espaço da logo */
-.logo-container img {
-  width: 100%; /* Ajusta a largura para preencher o contêiner */
-  height: 100%; /* Ajusta a altura para preencher o contêiner */
-  object-fit: cover; /* Garante que o logo ocupe o espaço sem distorcer */
-  position: absolute; /* Posicionamento necessário para o slider */
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  position: relative;
 }
 
 .logo-container img {
-    object-fit: contain; /* Mantém a proporção e ajusta ao tamanho máximo possível */
-    object-position: center; /* Centraliza a imagem dentro do contêiner */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+}
+
+/* Descrição do site */
+.description-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text-container {
+  max-width: 600px;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+.social-links a {
+  margin: 0 10px;
 }
