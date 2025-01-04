@@ -64,6 +64,7 @@ li a:hover {
 
 .text-container {
   max-width: 600px;
+  flex: 1 1 300px;
 }
 
 .text-container h2 {
@@ -80,14 +81,16 @@ li a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  justify-content: flex-start;
+  flex: 0 0 300px; /* Define o tamanho fixo da área de imagem */
 }
 
 .image-container img {
-  max-width: 300px;
-  width: 100%;
+  max-width: 140px; /* Ajusta a largura máxima das imagens */
+  max-height: 140px; /* Ajusta a altura máxima das imagens */
   border: 1px solid #ccc;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 /* Rodapé */
@@ -96,6 +99,22 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+.social-links a {
+  margin: 0 10px;
 }
 
 footer a {
