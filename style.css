@@ -117,3 +117,152 @@ footer .social-links img {
 footer .social-links img:hover {
   transform: scale(1.2);
 }
+/* Reset geral */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Navegação */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Contêiner da logo */
+.logo-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+}
+
+/* Descrição do site */
+.description-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text-container {
+  max-width: 600px;
+  flex: 1 1 300px;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  flex: 0 0 300px; /* Define o tamanho fixo da área de imagem */
+}
+
+.image-container img {
+  max-width: 140px; /* Ajusta a largura máxima das imagens */
+  max-height: 140px; /* Ajusta a altura máxima das imagens */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Ícones clicáveis e texto */
+.icon-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.clickable-icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.clickable-icon:hover {
+  transform: scale(1.1);
+}
+
+.text-display {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+footer .social-links img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+footer .social-links img:hover {
+  transform: scale(1.2);
+}
